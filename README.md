@@ -17,7 +17,7 @@ CLAMP is the product of a group from the [University of Texas Health Science Cen
 
 ## Installation & Starting Services
 ### NLP Service
-To run the web service, users will need to have downloaded the companion NLP service which requires special permission to use do to the license restrictions from the CLAMP team. Once permission has been grented, this will be delivered as a simple Docker image which be loaded as follows:
+To run the web service, users will need to have downloaded the companion NLP service which requires special permission to use due to the license restrictions from the CLAMP team. Once permission has been grented, this will be delivered as a simple Docker image which be loaded as follows:
 
 Download image and change to the directory containing the file and run the following command
 > docker load --input ws_clamp.tar
