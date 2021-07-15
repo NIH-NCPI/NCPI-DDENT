@@ -44,14 +44,10 @@ When running the service as is on a local system, the base endpoint is http://lo
 
 ### Ingest Into FHIR
 [base]/api/InjestIntoFhir
-Inputs required:
+Input required:
 * strDataDicUrl : The URL to a DbGAP study variable summary, such as https://ftp.ncbi.nlm.nih.gov/dbgap/studies/phs000007/phs000007.v32.p13/pheno_variable_summaries/phs000007.v32.pht000009.v2.ex0_7s.data_dict.xml
 * strdocDataDicname : Name to be assigned to the data dictionary
 * strVarReportUrl : URL to the related DbGAP variable report such as https://ftp.ncbi.nlm.nih.gov/dbgap/studies/phs000007/phs000007.v32.p13/pheno_variable_summaries/phs000007.v32.pht000009.v2.p13.ex0_7s.var_report.xml
 * strdocVarReportname : Name to be assigned to the variable report
 
 If successful, each of the CodeSystems generated will be stored inside the FHIR server alongside the ConceptMap. Users can also observe those FHIR structures from the console output during runtime. 
-
-
-
-
