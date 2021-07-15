@@ -8,7 +8,7 @@ While work on the prototype has stopped, the interst in mapping study specific v
 
 ## System Requirements
 ### API
-The web service itself is written using [Spring Boot](https://spring.io/projects/spring-boot) and requires [Maven](https://maven.apache.org) to build. Spring Boot is a Java framework and thus, requires a modern version of Java.  (As of July 15, 2021, the current version of Maven is not compatible with the current version of Java, so it's probably best to stick with an earlier version).
+The web service itself is written using [Spring Boot](https://spring.io/projects/spring-boot) and requires [Maven](https://maven.apache.org) to build. Spring Boot is a Java framework and thus, requires a modern version of Java.  (As of July 15, 2021, the current version of Maven in Ubuntu 20.04 is not compatible with the current version of Java, so it's probably best to stick with an earlier version).
 
 ### NLP
 In addition parsing DbGAP files to generate FHIR code systems for a given dataset, we have deloped a prototype API that interacts with [CLAMP](https://clamp.uth.edu) to generate CUIs for the variable descriptions, which can then be employed as the secondary FHIR code systems. 
