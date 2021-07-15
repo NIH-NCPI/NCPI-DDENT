@@ -1,18 +1,18 @@
 # NCPI-DDENT
 NCPI Data Dictionary Extraction and NLP Tool
 
-NCPI DDENT is a prototype web service intended to extract variable metadata from DbGAP studies and build FHIR ConceptMaps linking those variables to healthcare terms such as SNOMED, LOINC, etc. When used with an NLP system to generate related [Concept Unique Identifiers (CUIs)][https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_005.html] to populate secondary CodeSystems, the two can be mapped via the [ConceptMap][http://hl7.org/fhir/R4/conceptmap.html] allowing end users to identify relevant study variables based on the FHIR [$translate operation][http://hl7.org/fhir/R4/conceptmap-operation-translate.html].
+NCPI DDENT is a prototype web service intended to extract variable metadata from DbGAP studies and build FHIR ConceptMaps linking those variables to healthcare terms such as SNOMED, LOINC, etc. When used with an NLP system to generate related [Concept Unique Identifiers (CUIs)](https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_005.html) to populate secondary CodeSystems, the two can be mapped via the [ConceptMap](http://hl7.org/fhir/R4/conceptmap.html) allowing end users to identify relevant study variables based on the FHIR [$translate operation](http://hl7.org/fhir/R4/conceptmap-operation-translate.html).
 
 While work on the prototype has stopped, the interst in mapping study specific variables to common terminologies is very real and is likely to be revisted once some of the initial work has been completed migrating DbGAP study information into FHIR. 
 
 ## System Requirements
 ### API
-The web service itself is written using [Spring Boot][https://spring.io/projects/spring-boot] and requires [Maven][https://maven.apache.org] to build. Spring Boot is a Java framework and thus, requires a modern version of Java.  (As of July 15, 2021, the current version of Maven is not compatible with the current version of Java, so it's probably best to stick with an earlier version).
+The web service itself is written using [Spring Boot](https://spring.io/projects/spring-boot) and requires [Maven](https://maven.apache.org) to build. Spring Boot is a Java framework and thus, requires a modern version of Java.  (As of July 15, 2021, the current version of Maven is not compatible with the current version of Java, so it's probably best to stick with an earlier version).
 
 ### NLP
-In addition parsing DbGAP files to generate FHIR code systems for a given dataset, we have deloped a prototype API that interacts with [CLAMP][https://clamp.uth.edu] to generate CUIs for the variable descriptions, which can then be employed as the secondary FHIR code systems. 
+In addition parsing DbGAP files to generate FHIR code systems for a given dataset, we have deloped a prototype API that interacts with [CLAMP](https://clamp.uth.edu) to generate CUIs for the variable descriptions, which can then be employed as the secondary FHIR code systems. 
 
-CLAMP is the product of a group from the [University of Texas Health Science Center at Houston, School of Biomedical Informatics][uth.edu] and requires permission from the responsible parties there to share our prototype. TBD -- Get contact information for [CLAMP][https://clamp.uth.edu] 
+CLAMP is the product of a group from the [University of Texas Health Science Center at Houston, School of Biomedical Informatics](uth.edu) and requires permission from the responsible parties there to share our prototype. TBD -- Get contact information for [CLAMP](https://clamp.uth.edu) 
 
 ## Installation & Starting Services
 ### NLP Service
