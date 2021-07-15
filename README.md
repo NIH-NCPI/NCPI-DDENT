@@ -36,7 +36,7 @@ Switch to the new directory and build the snapshot jar file
 > mvn clean install
 
 To run the service locally, cd into the subdirectory, target, and run the following command
-> java -jar data-harmonization-0.0.1-SNAPSHOT.jar
+> java -jar ncpi-ddent-0.0.1-SNAPSHOT.jar
 
 ## Web Service Workflow
 For this version of the prototype, the workflow is shown below. 
