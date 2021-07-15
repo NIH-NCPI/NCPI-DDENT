@@ -40,8 +40,16 @@ Clone the repository
 Switch to the new directory and build the snapshot jar file
 > mvn clean install
 
+#### Run from console using Java
 To run the service locally, cd into the subdirectory, target, and run the following command
 > java -jar ncpi-ddent-0.0.1-SNAPSHOT.jar
+
+#### Build and run using Docker
+Once the build command above has completed, use the following command to build the Docker image:
+> docker build -t ddent-service .
+
+Once completed, it can be run using the following command
+> docker run -dp 4040:4040 ddent-service
 
 ## Web Service Workflow
 For this version of the prototype, the workflow is shown below. 
@@ -118,8 +126,6 @@ Using a different application use this end point to make a POST Call with this f
 Endpoint:
  http://localhost:4040/api/InjestIntoFhir
  
- 
-
 #### Swagger Injest Request
 ![](/img/request.png)
 
