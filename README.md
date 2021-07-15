@@ -1,6 +1,7 @@
 # NCPI-DDENT
 NCPI Data Dictionary Extraction and NLP Tool
 
+![NCPI Data Dictionary Extraction and NLP Tool](/img/ddent-overview.png)
 NCPI DDENT is a prototype web service intended to extract variable metadata from DbGAP studies and build FHIR ConceptMaps linking those variables to healthcare terms such as SNOMED, LOINC, etc. When used with an NLP system to generate related [Concept Unique Identifiers (CUIs)](https://www.nlm.nih.gov/research/umls/new_users/online_learning/Meta_005.html) to populate secondary CodeSystems, the two can be mapped via the [ConceptMap](http://hl7.org/fhir/R4/conceptmap.html) allowing end users to identify relevant study variables based on the FHIR [$translate operation](http://hl7.org/fhir/R4/conceptmap-operation-translate.html).
 
 While work on the prototype has stopped, the interst in mapping study specific variables to common terminologies is very real and is likely to be revisted once some of the initial work has been completed migrating DbGAP study information into FHIR. 
