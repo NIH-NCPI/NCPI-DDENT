@@ -443,3 +443,46 @@ INJEST COMPLLETE!!!!!!!!!!!! YAY !!!!!!!!!!!!!!!!
 2021-02-27 10:40:10.204  INFO 99659 --- [on(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2021-02-27 10:40:10.288  INFO 99659 --- [on(9)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 ```
+
+## NLP API Overview
+Ultimately, there should be a standard API frontend for performing basic CUI extraction from text blobs such as variable descriptions found in DbGAP's study metadata. However, at this time, the web service we have is coupled with CLAMP, which is not an open source product. Resarchers wishing to try this out must get permission from the team developing CLAMP to use our web service. Details about how to get said permission to follow (TODO: get details about inquiring about CLAMP).
+
+### NLP API 
+There are one function: getJson which can be called via GET or POST with a single parameter, Text. 
+
+#### getJson
+This passes the contents of the Text parameter to CLAMP and returns a JSON structure with the results.
+
+Parameters:
+> text  - This is the text to be parsed by the NLP backend
+
+``` 
+input
+
+http://localhost:8080/getJson?text=RELATIVE WEIGHT,EXAM 1
+```
+``` 
+output
+
+{
+    "Results": [
+        {
+            "Location_Start": 0,
+            "Location_End": 10,
+            "Semantics": "problem",
+            "CUI": "C1542178,SNOMEDCT_US[414292006,46866001]",
+            "Assertion": "present",
+            "Entity": "broken leg",
+            "Concept_Prob": 0.76
+        },
+        {
+            "Location_Start": 7,
+            "Location_End": 10,
+            "Semantics": "BDL",
+            "CUI": null,
+            "Assertion": null,
+            "Entity": "leg"
+        }
+    ]
+}
+```
