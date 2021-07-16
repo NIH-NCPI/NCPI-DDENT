@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "pht001-cs-dd",
+  "url": "https://www.ncbi.nlm.nih.gov/bioproject/?term=phs001",
+  "name": "Variables for pht001",
+  "title": "Study Name | Table Name",
+  "status": "draft",
+  "experimental": false,
+  "description": "Variables found in study|table ",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "phv001.v1",
+      "display": "has asthma"
+    },
+    {
+      "code": "phv002.v1",
+      "display": "problem with wheezing"
+    },
+    {
+      "code": "pnv003.v1",
+      "display": "RELATIVE WEIGHT"
+    }
+  ]
+}
+
+

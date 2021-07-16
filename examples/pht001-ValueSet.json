@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "pht001-vs-dd",
+  "url": "http://fhir.ncpi-project-forge.io/ValueSet/pht001-vs-dd",
+  "version": "0.1.0",
+  "name": "pht001-vs-dd",
+  "title": "Variables for pht001",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "NCPI Project Forge",
+  "description": "This value set includes all variable codes from the dbgap table, pht001.",
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "phv001.v1",
+            "display": "has asthma"
+          },
+          {
+            "code": "phv002.v1",
+            "display": "problem with wheezing"
+          },
+          {
+            "code": "pnv003.v1",
+            "display": "RELATIVE WEIGHT"
+          }
+        ]
+      }
+    ]
+  }
+}

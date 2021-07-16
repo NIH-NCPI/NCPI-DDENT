@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "dbgap-cui-vs-dd",
+  "url": "http://fhir.ncpi-project-forge.io/ValueSet/dbgap-cui-vs-dd",
+  "version": "0.1.0",
+  "name": "dbgap-cui-vs-dd",
+  "title": "Concept matches for variables from table, pht001",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "NCPI Project Forge",
+  "description": "Concept matches for variables from table, pht001.",
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "C0004096,SNOMEDCT_US[195967001]",
+            "display": "C0004096,SNOMEDCT_US[195967001]"
+          },
+          {
+            "code": "C0043144,SNOMEDCT_US[56018004]",
+            "display": "C0043144,SNOMEDCT_US[56018004]"
+          },
+          {
+            "code": "C1262477",
+            "display": "C1262477"
+          }
+        ]
+      }
+    ]
+  }
+}

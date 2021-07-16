@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cui-cs-dd",
+  "url": "http://fhir.ncpi-project-forge.io/ValueSet/cui-cs-dd",
+  "version": "0.1.0",
+  "name": "cui-cs-dd",
+  "title": "Variables CodeSystem NLP CUIs",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "NCPI Project Forge",
+  "description": "This value set includes all variable codes from the CUI output.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "C0004096,SNOMEDCT_US[195967001]",
+      "display": "C0004096,SNOMEDCT_US[195967001]"
+    },
+    {
+      "code": "C0043144,SNOMEDCT_US[56018004]",
+      "display": "C0043144,SNOMEDCT_US[56018004]"
+    },
+    {
+      "code": "C1262477",
+      "display": "C1262477"
+    }
+  ]
+}
+
+

@@ -1,0 +1,68 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "pht001-cm.v1",
+  "url": "http://someplace.org/fhir/ConceptMap/pht001-cm.v1",
+  "identifier": {
+    "system": "http://someplace.org",
+    "value": "phs001|pht001|cm"
+  },
+  "version": "4.0.1",
+  "name": "Variable to ConceptIDs for pht001",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-11-13",
+  "publisher": "Eric's computer",
+  "contact": [
+    {
+      "name": "Anthony",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "Some description of how these mappings are produced that would provide the end user some confidence they may be meaningful.",
+  "purpose": "Allow researchers to better find the data they need for their research",
+  "sourceCanonical": "http://fhir.ncpi-project-forge.io/ValueSet/pht001-vs-dd",
+  "targetCanonical": "http://fhir.ncpi-project-forge.io/ValueSet/dbgap-cui-vs-dd",
+  "group": [
+    {
+      "source": "http://fhir.ncpi-project-forge.io/ValueSet/pht001-cs-dd",
+      "sourceVersion": "v1",
+      "target": "http://fhir.ncpi-project-forge.io/ValueSet/cui-cs-dd",
+      "targetVersion": "v4",
+      "element": [
+        {
+          "code": "phv001.v1",
+          "target": [
+            {
+              "code": "C0004096,SNOMEDCT_US[195967001]",
+              "equivalence": "equivalent",
+              "comment": "This may be some additional information from the NLP algorithm that would be of interest to the end user."
+            }
+          ]
+        },
+        {
+          "code": "phv002.v1",
+          "target": [
+          	{
+          	  "code": "C0043144,SNOMEDCT_US[56018004]",
+          	  "equivalence": "equivalent"
+          	}
+          ]	
+        },
+        {
+          "code": "phv003.v1",
+          "target": [
+          	{
+ 			  "code": "C1262477",
+ 			  "equivalence": "equivalent"
+ 			}
+          ]
+        }
+      ]
+    }
+  ]
+}
